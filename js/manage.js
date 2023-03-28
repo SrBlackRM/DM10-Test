@@ -73,23 +73,30 @@ async function visualizarProprietario(el){
     const href = 'http://localhost/view/visualizar-proprietario.html';
     const queryFile = 'http://localhost/config/visualizar-proprietarios.php';
 
-    const tableContent = document.querySelector('table-content');
+    const tableContent = document.querySelector('.table-content');
 
     try{
         const response = await request({
             method: 'GET',
             url: href,
         });
+        try{
+            const response = await request({
+                method: 'GET',
+                url: queryFile,
+            }).then(resp => {
+                const data = JSON.parse(resp);
+                const nomeH1 = document.createElement('h1');
+                console.log(data[0][1]);
+                nomeH1.innerHTML = data[0][1];
+            });
+            
+        }catch(e) {console.log(e)};
         
         carregaResultado(response);
     }catch(e) {console.log(e)};
 
-    try{
-        const response = await request({
-            method: 'GET',
-            url: queryFile,
-        });
-    }catch(e) {console.log(e)};
+    
 }
 
 async function visualizarVeiculo(el){

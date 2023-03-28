@@ -17,7 +17,7 @@
             </div>
         </section>
         <section class="main-right-content">
-            <div id="root">teste</div>
+            <div id="root"></div>
         </section>
     </main>
     <script src="./js/manage.js"></script>
