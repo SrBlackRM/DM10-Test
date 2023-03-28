@@ -31,3 +31,6 @@ Tela de login
 
 Tela de controle
 ![image](https://user-images.githubusercontent.com/15936327/228361190-44531ea0-4620-4663-a1c3-b12c26d6e7c2.png)
+
+PHPMyAdmin -> tabelas de proprietarios e veiculos
+![image](https://user-images.githubusercontent.com/15936327/228363295-199e62a9-a7dc-4261-9c6f-890a26af464e.png)
